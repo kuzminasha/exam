@@ -1,0 +1,103 @@
+body,
+html {
+    font-size: 62.5%;
+    margin: 0;
+}
+
+:root {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    background-color: #08080C;
+    color: #fff;
+}
+
+header{
+height: 7.1rem;
+margin-left: 1.7rem;
+margin-right: 2.2rem;
+display: flex;
+align-items: center;
+justify-content: space-between; 
+}
+
+button{
+    font-size: 1.4rem;
+  border: 0;
+  border-radius: 0;
+  background: #08080C;
+  color: #fff;
+}
+
+.sign{
+height: 4.2rem;
+width: 10.3rem;
+background: #1EE1B3;
+border-radius: .3rem;
+margin-left: 1.7rem;
+}
+
+.right{
+
+}
+
+.slogan_line{
+    height: 8.3rem;
+    margin: 5rem 2.2rem 5.6rem 2.3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.slogan{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.line{
+    border-bottom: 2px solid #515151;
+    width: 45%;
+}
+
+
+h2{
+    font-size: 2rem;
+    margin: 0;
+}
+
+p{
+ font-size: 1.3rem;
+}
+
+.need{
+    display: grid;
+    grid-template-columns: .25fr 3fr;
+    grid-column-gap: 4rem;
+    padding-bottom: 6rem;
+}
+
+.needs{
+    margin-left: 2.3rem;
+    margin-right: 2rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hide{
+    display: none;
+}
+
+.begin{
+    margin-left: 2.3rem;
+}
