@@ -1,84 +1,81 @@
 body,
 html {
-    font-size: 62.5%;
-    margin: 0;
+  font-size: 62.5%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 400;
-    background-color: #08080C;
-    color: #fff;
-}
-
-header{
-height: 7.1rem;
-margin-left: 1.7rem;
-margin-right: 2.2rem;
-display: flex;
-align-items: center;
-justify-content: space-between; 
-}
-
-button{
-    font-size: 1.4rem;
-  border: 0;
-  border-radius: 0;
-  background: #08080C;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  background-color: #08080c;
   color: #fff;
 }
 
-.sign{
-height: 4.2rem;
-width: 10.3rem;
-background: #1EE1B3;
-border-radius: .3rem;
-margin-left: 1.7rem;
+header {
+  height: 7.1rem;
+  margin-left: 1.7rem;
+  margin-right: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.right{
-
+.button {
+  font-size: 1.4rem;
+  border: 0;
+  border-radius: 0;
+  background: #08080c;
+  color: #fff;
 }
 
-.slogan_line{
-    height: 8.3rem;
-    margin: 5rem 2.2rem 5.6rem 2.3rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+.sign {
+  height: 4.2rem;
+  width: 10.3rem;
+  background: #1ee1b3;
+  border-radius: 0.3rem;
+  margin-left: 1.7rem;
 }
 
-.slogan{
-    font-size: 3rem;
-    font-weight: 700;
-    margin: 0;
+.slogan_line {
+  height: 8.3rem;
+  margin: 5rem 2.2rem 5.6rem 2.3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 33rem;
 }
 
-.line{
-    border-bottom: 2px solid #515151;
-    width: 45%;
+.slogan {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
 }
 
-
-h2{
-    font-size: 2rem;
-    margin: 0;
+.line {
+  border-bottom: 2px solid #515151;
+  width: 45%;
 }
 
-p{
- font-size: 1.3rem;
+h2 {
+  font-size: 2rem;
+  margin: 0;
 }
 
-.need{
-    display: grid;
-    grid-template-columns: .25fr 3fr;
-    grid-column-gap: 4rem;
-    padding-bottom: 6rem;
+p {
+  font-size: 1.3rem;
 }
 
-.needs{
-    margin-left: 2.3rem;
-    margin-right: 2rem;
+.need {
+  display: grid;
+  grid-template-columns: 0.25fr 3fr;
+  grid-column-gap: 4rem;
+  padding-bottom: 6rem;
+}
+
+.needs {
+  margin-left: 2.3rem;
+  margin-right: 2rem;
 }
 
 .sr-only {
@@ -94,10 +91,45 @@ p{
   overflow: hidden;
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 
-.begin{
-    margin-left: 2.3rem;
+.begin {
+  margin-left: 2.3rem;
+  margin-bottom: 3rem;
 }
+
+.task_2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+form {
+    max-width: 40%;
+    min-width: 32rem;
+    margin-inline: auto;
+  }
+
+  svg{
+    vertical-align: middle;
+  }
+  
+  input[type="submit"],
+  button {
+    margin-top: 1em;
+    margin-right: 2em;
+    transition: transform 1s, background-color 0.5s;
+  }
+  
+  input[type="submit"]:hover,
+  button:hover {
+    background-color: tomato;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    transform: initial;
+    background-color: lightgray;
+  }

@@ -1,68 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/reseter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet" />
     <title>Кузьмина Дарья Александровна, 211-325, 28.01.2023</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <button name="Menu" class="menu"><img src="" alt="" />Menu</button>
-      <div class="right">
-        <button name="LogIn" class="log"><img src="" alt="" />LogIn</button>
-        <button name="SIGN UP" class="sign">
-          <img src="" alt="" />SIGN UP
-        </button>
-      </div>
-      <a href="#index.html" class="sr-only">About</a>
-      <a href="#" class="sr-only">Why Begin</a>
-      <a href="#" class="sr-only">Futures</a>
-      <a href="#" class="sr-only">Contact</a>
+        <button name="Menu" class="button"><img src="" alt="" />Menu</button>
+        <div class="right">
+            <button name="LogIn" class="button"><img src="" alt="" />LogIn</button>
+            <button name="SIGN UP" class="sign button">
+                <img src="" alt="" />SIGN UP
+            </button>
+        </div>
+        <a href="#index.html" class="sr-only">About</a>
+        <a href="#" class="sr-only">Why Begin</a>
+        <a href="#" class="sr-only">Futures</a>
+        <a href="#" class="sr-only">Contact</a>
     </header>
     <main>
-      <h1 class="hide">Задание 1</h1>
-      <div class="slogan_line">
-        <p class="slogan">EVERYTHING YOU NEED!</p>
-        <span class="line"></span>
-      </div>
-      <section class="needs">
-        <div class="need_1 need">
-          <img src="img/icon1.svg" alt="icon" />
-          <div class="text">
-            <h2>Body measurement tracking</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi
-            </p>
-          </div>
+        <h1 class="hide">Задание 1</h1>
+        <div class="slogan_line">
+            <p class="slogan">EVERYTHING YOU NEED!</p>
+            <span class="line"></span>
         </div>
-        <div class="need_2 need">
-          <img src="img/icon2.svg" alt="icon" />
-          <div class="text">
-            <h2>In home trial of clothes and closet</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi
-            </p>
-          </div>
-        </div>
-      </section>
-      <img class="begin" src="img/begin.png" alt="begin" />
+        <section class="needs">
+            <div class="need_1 need">
+                <img src="img/icon1.svg" alt="icon" />
+                <div class="text">
+                    <h2>Body measurement tracking</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                        erat volutpat. Ut wisi
+                    </p>
+                </div>
+            </div>
+            <div class="need_2 need">
+                <img src="img/icon2.svg" alt="icon" />
+                <div class="text">
+                    <h2>In home trial of clothes and closet</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                        erat volutpat. Ut wisi
+                    </p>
+                </div>
+            </div>
+        </section>
+        <img class="begin" src="img/begin.png" alt="begin" />
+        <hr>
     </main>
 
     <section>
-      <h1 class="">Задание 2</h1>
+        <h1 class="task_2">Задание 2</h1>
+
+        <form action="//httpbin.org/post" class="form-start" name="contact" method="POST" data-netlify="true">
+
+            <p><label>Ссылка на видео <input type="url" name="url" placeholder="Ссылка"></label></p>
+            <p><label>Рекламная интеграция <select name="quantity" required></p>
+            <option value="1">есть</option>
+            <option value="2" selected>нет</option>
+            
+            <fieldset>
+                <legend>Тип видео</legend>
+                <label>
+                    <input type="radio" name="free">
+                    Открытое
+                </label>
+                <label>
+                    <input type="radio" name="private" checked>
+                    Приватное
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Отправить">
+            <button type="submit">Отправить<svg width="16px" height="16px" viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <path d="M8.64 5l2.5 2.5v.7l-2.5 2.5-.71-.7 1.64-1.65H4v-1h5.57L7.92 5.7l.72-.7z" />
+                </svg></button>
+            <button type="reset" disabled>Сбросить</button>
+        </form>
     </section>
-  </body>
+</body>
+
 </html>
